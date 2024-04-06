@@ -11,7 +11,8 @@ public class RequestInterceptor implements HandlerInterceptor{
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
-        //* Business logic just when the request is received and intercepted by this interceptor before reaching the controller
+        //* Business logic just when the request is received and intercepted by this interceptor
+        // before reaching the controller
         try {
             System.out.println("1 - preHandle() : Before sending request to the Controller");
             System.out.println("Method Type: " + request.getMethod());
